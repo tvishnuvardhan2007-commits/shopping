@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UrbanStyle Clothing</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#020617;
+z-index:100;
+}
+
+.logo{
+height:40px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:url("8905875164012-9.jpg") center/cover;
+}
+
+.hero h2{
+font-size:55px;
+background:rgba(0,0,0,0.6);
+padding:20px 40px;
+border-radius:10px;
+}
+
+/* CATEGORY */
+
+.category{
+padding:80px 10%;
+text-align:center;
+}
+
+.category h2{
+margin-bottom:40px;
+font-size:35px;
+}
+
+.cat-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.cat{
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.cat:hover{
+transform:scale(1.05);
+background:#334155;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px 10%;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:50px;
+font-size:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+}
+
+.card-body h4{
+margin-bottom:8px;
+}
+
+.price{
+color:#38bdf8;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+button{
+background:#38bdf8;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0284c7;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<img src="alphabet-letter-v-gold-logo-font-style-vector-illustration-125617668.webp" class="logo">
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#category">Category</a></li>
+<li><a href="#products">Shop</a></li>
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+<h2>New Fashion Collection</h2>
+</section>
+
+
+<!-- CATEGORY -->
+
+<section id="category" class="category">
+
+<h2>Categories</h2>
+
+<div class="cat-grid">
+
+<div class="cat">Shirts</div>
+<div class="cat">T-Shirts</div>
+<div class="cat">Pants</div>
+<div class="cat">Shorts</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products" class="products">
+
+<h2>Trending Products</h2>
+
+<div class="grid">
+
+<!-- SHIRTS -->
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+<div class="card-body">
+<h4>Formal White Shirt</h4>
+<p class="price">$40</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10">
+<div class="card-body">
+<h4>Blue Casual Shirt</h4>
+<p class="price">$38</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="8905875164012-9.jpg">
+<div class="card-body">
+<h4>Striped Shirt</h4>
+<p class="price">$35</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+
+<!-- TSHIRTS -->
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+<div class="card-body">
+<h4>Black T Shirt</h4>
+<p class="price">$20</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+<div class="card-body">
+<h4>White T Shirt</h4>
+<p class="price">$18</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="shopping.webp">
+<div class="card-body">
+<h4>Graphic T Shirt</h4>
+<p class="price">$25</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+
+<!-- PANTS -->
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a">
+<div class="card-body">
+<h4>Denim Jeans</h4>
+<p class="price">$50</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246">
+<div class="card-body">
+<h4>Black Pants</h4>
+<p class="price">$45</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb">
+<div class="card-body">
+<h4>Khaki Pants</h4>
+<p class="price">$42</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+
+<!-- SHORTS -->
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+<div class="card-body">
+<h4>Sport Shorts</h4>
+<p class="price">$22</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520975661595-6453be3f7070">
+<div class="card-body">
+<h4>Beach Shorts</h4>
+<p class="price">$24</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 UrbanStyle Clothing Store</p>
+
+</footer>
+
+
+<script>
+
+function cart(){
+alert("Added to cart!");
+}
+
+</script>
+
+</body>
+</html>

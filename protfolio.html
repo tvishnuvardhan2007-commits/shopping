@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Vardhan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1f1c2c, #928dab);
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            color: white;
+            text-align: left;
+        }
+
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+        }
+
+        .header h1 {
+            font-size: 32px;
+        }
+
+        .header p {
+            margin-top: 6px;
+        }
+
+        .tag {
+            font-style: italic;
+            color: #f1f1f1;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #00f2ff;
+        }
+
+        .card {
+            background: white;
+            width: 80%;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #1f1c2c;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="NAVA.jpeg" alt="Likith Reddy Profile Photo" class="profile">
+        <div>
+            <h1>Vishnu Vardhan</h1>
+            <p>Web Development Learner | CSE Student</p>
+            <p class="tag">Turning ideas into interactive web experiences.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="card about">
+        <h2>About Me</h2>
+        <p>I am a student passionate about Web Development. Currently learning HTML, CSS and Java. I love creating clean and responsive websites.</p>
+    </section>
+
+    <section id="skills" class="card skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java (Basics)</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="card projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Portfolio Website – Built using HTML & CSS</li>
+            <li>Login Page – Responsive design using HTML & CSS</li>
+        </ul>
+    </section>
+
+    <section id="education" class="card education">
+        <h2>Education</h2>
+        <p>B.Tech in Electronics and Communication</p>
+        <p>2025 – 2029</p>
+    </section>
+
+    <section id="contact" class="card contact">
+        <h2>Contact</h2>
+        <p>Email: VishnuVardhan@email.com</p>
+        <p>LinkedIn: linkedin.com/in/vishnuvardhan</p>
+    </section>
+
+    <footer>
+        © 2026 Vishnu Vardhan | Student Portfolio
+    </footer>
+
+</body>
+</html>
